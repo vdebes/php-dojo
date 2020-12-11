@@ -1,0 +1,31 @@
+{
+    "name": "vdebes/php-dojo",
+    "description": "Challenges to illustrate coding concepts like design patterns, SOLID...",
+    "type": "project",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "vdebes",
+            "email": "vdebes@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "vdebes\\phpdojo\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "phpdojo\\tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.5",
+        "phpstan/phpstan": "^0.12.63",
+        "phpstan/phpstan-phpunit": "^0.12.17"
+    }
+}
