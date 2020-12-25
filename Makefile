@@ -21,6 +21,11 @@ cs: ## Checks the codestyle
 	$(call printSection,CODE STYLE CHECKING)
 	vendor/bin/phpcs -s
 
+.PHONY: cs-fix
+cs-fix: ## Fixes the codestyle
+	$(call printSection,CODE STYLE CHECKING)
+	vendor/bin/phpcbf
+
 .PHONY: static
 static: ## Runs static analysis
 	$(call printSection,PHP STAN ANALYSIS)
