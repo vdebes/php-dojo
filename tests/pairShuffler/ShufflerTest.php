@@ -8,6 +8,7 @@ use vdebes\phpdojo\pairShuffler\Shuffler;
 class ShufflerTest extends TestCase
 {
     /**
+     * @param array<string> $participants
      * @dataProvider participantsDataProvider
      */
     public function testSplitsParticipantsInDuoOrTrio(array $participants, int $expectedGroupsCount): void
@@ -19,6 +20,7 @@ class ShufflerTest extends TestCase
     }
 
     /**
+     * @param array<string> $participants
      * @dataProvider participantsDataProvider
      */
     public function testOutputContainsAllParticipantsButInDifferentOrder(array $participants): void
@@ -34,6 +36,9 @@ class ShufflerTest extends TestCase
         self::assertEmpty(array_diff($participants, $flatOutput));
     }
 
+    /**
+     * @return array<mixed>
+     */
     public function participantsDataProvider(): array
     {
         return [
