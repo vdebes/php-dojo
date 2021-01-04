@@ -21,20 +21,7 @@ class ShufflerTest extends TestCase
     /**
      * @dataProvider participantsDataProvider
      */
-    public function testOutputContainsAllParticpants(array $participants): void
-    {
-        $testedInstance = new Shuffler();
-
-        $output = $testedInstance($participants);
-
-        $flatOutput = array_merge(...$output);
-        self::assertEmpty(array_diff($participants, $flatOutput));
-    }
-
-    /**
-     * @dataProvider participantsDataProvider
-     */
-    public function testOutputOrderDiffersFromInputs(array $participants): void
+    public function testOutputContainsAllParticipantsButInDifferentOrder(array $participants): void
     {
         $testedInstance = new Shuffler();
 
