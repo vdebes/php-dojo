@@ -11,6 +11,8 @@ class GreeterTest extends TestCase
     {
         $testedInstance = new Greeter();
         self::assertIsObject($testedInstance);
-        self::assertNotNull($testedInstance());
+        self::assertNotNull($output = $testedInstance());
+        self::assertIsString($output);
+        self::assertSame('Hello, world!', $output);
     }
 }
