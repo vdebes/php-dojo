@@ -41,7 +41,10 @@ class ShufflerTest extends TestCase
         $output = $testedInstance($participants);
 
         $flatOutput = array_merge(...$output);
-        self::assertNotEquals($participants, $flatOutput);
+        if (count($participants) > 3) {
+            self::assertNotEquals($participants, $flatOutput);
+        }
+        self::assertEmpty(array_diff($participants, $flatOutput));
     }
 
     public function participantsDataProvider(): array

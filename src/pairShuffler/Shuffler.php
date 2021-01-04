@@ -6,6 +6,7 @@ class Shuffler
 {
     public function __invoke(array $list): array
     {
+        shuffle($list);
         $listSize = count($list);
         $isOddList = $listSize % 2 !== 0;
         $list = array_chunk($list, 2);
