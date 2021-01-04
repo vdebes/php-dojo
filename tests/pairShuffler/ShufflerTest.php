@@ -25,6 +25,9 @@ class ShufflerTest extends TestCase
         return [
             [['Riri'], 1],
             [['Riri','Fifi'], 1],
+            [['Riri','Fifi','Loulou'], 1],
+            [['Riri','Fifi','Loulou','Donald'], 2],
+            [['Riri','Fifi','Loulou','Donald','Picsou'], 2],
         ];
     }
 }
