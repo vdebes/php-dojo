@@ -6,6 +6,6 @@ class Greeter
 {
     public function __invoke(): string
     {
-        return '';
+        return 'Hello, world!';
     }
 }
