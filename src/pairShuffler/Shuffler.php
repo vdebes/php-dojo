@@ -4,7 +4,7 @@ namespace vdebes\phpdojo\pairShuffler;
 
 class Shuffler
 {
-    public function shuffle(array $list): array
+    public function __invoke(array $list): array
     {
         $listSize = count($list);
         $isOddList = $listSize % 2 !== 0;
