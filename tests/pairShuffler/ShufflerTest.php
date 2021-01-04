@@ -11,5 +11,6 @@ class ShufflerTest extends TestCase
     {
         $testedInstance = new Shuffler();
         self::assertIsObject($testedInstance);
+        self::assertNull($testedInstance->shuffle());
     }
 }
