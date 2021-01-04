@@ -4,8 +4,8 @@ namespace vdebes\phpdojo\pairShuffler;
 
 class Shuffler
 {
-    public function shuffle(): array
+    public function shuffle(array $list): array
     {
-        return [];
+        return $list;
     }
 }
