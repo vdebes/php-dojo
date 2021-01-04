@@ -13,5 +13,9 @@ class ShufflerTest extends TestCase
         self::assertIsObject($testedInstance);
         self::assertTrue(method_exists($testedInstance, 'shuffle'));
         self::assertIsArray($testedInstance->shuffle());
+
+        $list = ['foo'];
+        $result = $testedInstance->shuffle($list);
+        self::assertCount(count($list), $result);
     }
 }
