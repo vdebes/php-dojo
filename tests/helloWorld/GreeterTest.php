@@ -11,5 +11,7 @@ class GreeterTest extends TestCase
     {
         $testedInstance = new Greeter();
         self::assertIsObject($testedInstance);
+
+        self::assertNotNull($testedInstance());
     }
 }
