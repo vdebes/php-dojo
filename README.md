@@ -4,6 +4,7 @@ This is an attempt to create fast and fun coding dojos. The goal is to find very
 
 ## How to play
 Each subdirectory of [/src](./src) is a dojo by itself. It __MUST__ be performed using TDD.
+
 ### Rules of TDD
 1. You can’t write any production code until you have first written a failing unit test.
 2. You can’t write more of a unit test than is sufficient to fail, and not compiling is failing.
