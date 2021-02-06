@@ -1,6 +1,6 @@
 <?php
 
-namespace phpdojo\tests\fizzBuzz;
+namespace phpdojo\tests\unit\fizzBuzz;
 
 use PHPUnit\Framework\TestCase;
 use vdebes\phpdojo\fizzBuzz\FizzBuzzer;
