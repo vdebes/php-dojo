@@ -2,7 +2,7 @@
 
 namespace vdebes\phpdojo\helloWorld;
 
-class Greeter
+class Greeter implements Greet
 {
     public function __invoke(): string
     {

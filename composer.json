@@ -26,6 +26,7 @@
         "phpunit/phpunit": "^9.5",
         "squizlabs/php_codesniffer": "^3.5",
         "phpstan/phpstan": "^0.12.63",
-        "phpstan/phpstan-phpunit": "^0.12.17"
+        "phpstan/phpstan-phpunit": "^0.12.17",
+        "mockery/mockery": "^1.4"
     }
 }

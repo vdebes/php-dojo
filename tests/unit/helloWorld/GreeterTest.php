@@ -3,6 +3,7 @@
 namespace phpdojo\tests\unit\helloWorld;
 
 use PHPStan\Testing\TestCase;
+use vdebes\phpdojo\helloWorld\Greet;
 use vdebes\phpdojo\helloWorld\Greeter;
 
 class GreeterTest extends TestCase
